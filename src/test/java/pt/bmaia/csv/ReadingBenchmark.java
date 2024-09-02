@@ -7,7 +7,6 @@ import java.io.Reader;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -20,10 +19,10 @@ import pt.bmaia.csv.WritingBenchmark.Pair;
 import pt.bmaia.csv.reading.parsing.records.RecordsParserImpl;
 import pt.bmaia.csv.timer.TaskTimer;
 import pt.bmaia.csv.timer.TimingResult;
-import pt.procurainterna.io.reader.CharsInputReader;
-import pt.procurainterna.io.reader.Readers;
-import pt.procurainterna.text.charsinput.CharsInput;
-import pt.procurainterna.text.charsinput.CharsInputs;
+import pt.procurainterna.lang.text.charsinput.CharsInput;
+import pt.procurainterna.lang.text.charsinput.CharsInputs;
+import pt.procurainterna.lang.text.charsinput.reader.CharsInputReader;
+import pt.procurainterna.lang.text.reader.Readers;
 
 public class ReadingBenchmark {
 

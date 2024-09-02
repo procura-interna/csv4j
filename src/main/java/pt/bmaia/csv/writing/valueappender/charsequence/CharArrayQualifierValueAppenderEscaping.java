@@ -1,6 +1,6 @@
 package pt.bmaia.csv.writing.valueappender.charsequence;
 
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class CharArrayQualifierValueAppenderEscaping<C extends CharSequence> extends AbstractAlwaysQualifiedValueAppender<C>{
 

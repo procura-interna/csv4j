@@ -1,7 +1,6 @@
 package pt.bmaia.csv.writing.valueappender;
 
-
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 /**
  * Meant to perform transformations on individual textual values that are about to be placed on

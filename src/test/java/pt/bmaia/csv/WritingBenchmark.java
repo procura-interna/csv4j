@@ -36,15 +36,15 @@ import pt.bmaia.csv.writing.escaper.Escaper;
 import pt.bmaia.csv.writing.escaper.Escapers;
 import pt.bmaia.csv.writing.qualifierappender.QualifierAppender;
 import pt.bmaia.csv.writing.qualifierappender.QualifierAppenders;
-import pt.bmaia.injection4j.classinstance.ClassInstanceProvider;
-import pt.bmaia.injection4j.classinstance.ClassInstanceProviders;
-import pt.bmaia.injection4j.configuration.building.StrategyStoresBuilders;
-import pt.bmaia.injection4j.configuration.building.typed.TypedStrategiesStoreBuilder;
-import pt.procurainterna.io.writer.CharsOutputWriter;
-import pt.procurainterna.iterators.Iterators;
-import pt.procurainterna.text.appendable.Appendables;
-import pt.procurainterna.text.charsoutput.CharsOutput;
-import pt.procurainterna.text.charsoutput.CharsOutputs;
+import pt.procurainterna.injection4j.module.builder.ModuleBuilder;
+import pt.procurainterna.injection4j.module.builder.ModuleBuilders;
+import pt.procurainterna.injection4j.provider.Provider;
+import pt.procurainterna.injection4j.provider.Providers;
+import pt.procurainterna.lang.iterators.Iterators;
+import pt.procurainterna.lang.text.appendable.Appendables;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutputs;
+import pt.procurainterna.lang.text.charsoutput.writer.CharsOutputWriter;
 
 public class WritingBenchmark {
 
@@ -135,7 +135,7 @@ public class WritingBenchmark {
         List.of(pair("char value delimiter appender", charValueDelimiterAppender),
             pair("char array value delimiter", charArrayValueDelimiterAppender));
 
-    final TypedStrategiesStoreBuilder contextBuilder = StrategyStoresBuilders.typed();
+    final ModuleBuilder contextBuilder = ModuleBuilders.map();
 
     final Map<String, StrategyInserter> inserters = new LinkedHashMap<>();
 
@@ -162,8 +162,8 @@ public class WritingBenchmark {
             });
             nameBuilder.setLength(nameBuilder.length() - 3);
 
-            final ClassInstanceProvider instanceProvider =
-                ClassInstanceProviders.recursive(contextBuilder.build());
+            final Provider instanceProvider =
+                Providers.recursive(contextBuilder.build());
 
             final RecordAppender<List<String>> recordAppender =
                 instanceProvider.provide(RecordAppender.class);
@@ -289,19 +289,19 @@ public class WritingBenchmark {
 
   private static interface StrategyInserter {
 
-    void register(final TypedStrategiesStoreBuilder typedStrategiesStoreBuilder);
+    void register(final ModuleBuilder typedStrategiesStoreBuilder);
 
   }
 
   private static class DeferredStrategyInserter {
 
-    private final Consumer<? super TypedStrategiesStoreBuilder> consumer;
+    private final Consumer<? super ModuleBuilder> consumer;
 
-    private DeferredStrategyInserter(final Consumer<? super TypedStrategiesStoreBuilder> consumer) {
+    private DeferredStrategyInserter(final Consumer<? super ModuleBuilder> consumer) {
       this.consumer = consumer;
     }
 
-    public void register(final TypedStrategiesStoreBuilder typedStrategiesStoreBuilder) {
+    public void register(final ModuleBuilder typedStrategiesStoreBuilder) {
       consumer.accept(typedStrategiesStoreBuilder);
     }
 

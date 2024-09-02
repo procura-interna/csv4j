@@ -1,6 +1,6 @@
 package pt.bmaia.csv.writing.serializing.outputstream;
 
-import pt.procurainterna.io.bytesoutput.BytesOutput;
+import pt.procurainterna.lang.io.bytesoutput.BytesOutput;
 
 public interface RecordsToBytesOutput<D> {
 

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pt.bmaia.csv.reading.parsing.records.RecordParser;
 import pt.bmaia.csv.reading.parsing.records.RecordsParserImpl;
-import pt.procurainterna.text.charsinput.CharsInputs;
+import pt.procurainterna.lang.text.charsinput.CharsInputs;
 
 public class ReadTest {
 

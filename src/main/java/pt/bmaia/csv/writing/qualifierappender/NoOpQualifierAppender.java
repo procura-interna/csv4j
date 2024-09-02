@@ -1,6 +1,6 @@
 package pt.bmaia.csv.writing.qualifierappender;
 
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class NoOpQualifierAppender implements QualifierAppender {
 

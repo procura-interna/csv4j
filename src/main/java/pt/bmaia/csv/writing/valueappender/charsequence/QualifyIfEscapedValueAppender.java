@@ -4,8 +4,8 @@ import pt.bmaia.csv.writing.escaper.EscapeChecker;
 import pt.bmaia.csv.writing.escaper.Escaper;
 import pt.bmaia.csv.writing.qualifierappender.QualifierAppender;
 import pt.bmaia.csv.writing.valueappender.ValueAppender;
-import pt.procurainterna.text.charsinput.CharsInputs;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsinput.CharsInputs;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class QualifyIfEscapedValueAppender<C extends CharSequence> implements ValueAppender<C> {
 

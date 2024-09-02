@@ -1,7 +1,7 @@
 package pt.bmaia.csv.writing.delimiterappender.chararray;
 
 import pt.bmaia.csv.writing.delimiterappender.DelimiterAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class CharArrayDelimiterAppender implements DelimiterAppender {
 

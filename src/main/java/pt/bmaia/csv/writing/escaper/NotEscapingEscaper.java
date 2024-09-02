@@ -1,7 +1,7 @@
 package pt.bmaia.csv.writing.escaper;
 
-import pt.procurainterna.text.charsinput.CharsInput;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsinput.CharsInput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class NotEscapingEscaper implements Escaper {
 

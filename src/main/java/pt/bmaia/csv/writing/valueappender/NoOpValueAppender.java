@@ -1,6 +1,6 @@
 package pt.bmaia.csv.writing.valueappender;
 
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class NoOpValueAppender<V> implements ValueAppender<V> {
 

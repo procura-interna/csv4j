@@ -2,7 +2,7 @@ package pt.bmaia.csv.writing.recordappender;
 
 import pt.bmaia.csv.writing.delimiterappender.DelimiterAppender;
 import pt.bmaia.csv.writing.valueappender.ValueAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class CharSequenceArrayRecordAppender<C extends CharSequence> implements RecordAppender<C[]> {
 

@@ -1,7 +1,6 @@
 package pt.bmaia.csv.writing.recordsappender;
 
-import pt.bmaia.csv.writing.recordsappender.RecordsAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class Rfc4180CompliantCharMatrixRecordsAppender implements RecordsAppender<char[][][]> {
 

@@ -24,8 +24,8 @@ import pt.bmaia.csv.writing.qualifierappender.QualifierAppender;
 import pt.bmaia.csv.writing.qualifierappender.QualifierAppenders;
 import pt.bmaia.csv.writing.serializing.outputstream.BufferedValuesRecordsToBytesOutput;
 import pt.bmaia.csv.writing.serializing.outputstream.RecordsToBytesOutput;
-import pt.procurainterna.io.bytesoutput.BytesOutput;
-import pt.procurainterna.io.bytesoutput.BytesOutputs;
+import pt.procurainterna.lang.io.bytesoutput.BytesOutput;
+import pt.procurainterna.lang.io.bytesoutput.BytesOutputs;
 
 public class WriteTest {
 

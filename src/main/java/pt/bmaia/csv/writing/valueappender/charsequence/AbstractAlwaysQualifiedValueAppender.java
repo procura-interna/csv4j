@@ -1,7 +1,7 @@
 package pt.bmaia.csv.writing.valueappender.charsequence;
 
 import pt.bmaia.csv.writing.valueappender.ValueAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public abstract class AbstractAlwaysQualifiedValueAppender<C extends CharSequence> implements ValueAppender<C> {
 

@@ -3,7 +3,7 @@ package pt.bmaia.csv.writing.recordsappender;
 import java.util.Iterator;
 import pt.bmaia.csv.writing.delimiterappender.DelimiterAppender;
 import pt.bmaia.csv.writing.recordappender.RecordAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class IteratorRecordAppenderRecordsAppender<R, D extends Iterator<R>>
     implements RecordsAppender<D> {

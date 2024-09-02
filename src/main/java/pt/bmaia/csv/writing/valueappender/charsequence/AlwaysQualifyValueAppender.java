@@ -3,8 +3,8 @@ package pt.bmaia.csv.writing.valueappender.charsequence;
 import pt.bmaia.csv.writing.valueappender.ValueAppender;
 import pt.bmaia.csv.writing.escaper.Escaper;
 import pt.bmaia.csv.writing.qualifierappender.QualifierAppender;
-import pt.procurainterna.text.charsinput.CharsInputs;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsinput.CharsInputs;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class AlwaysQualifyValueAppender<C extends CharSequence> implements ValueAppender<C> {
 

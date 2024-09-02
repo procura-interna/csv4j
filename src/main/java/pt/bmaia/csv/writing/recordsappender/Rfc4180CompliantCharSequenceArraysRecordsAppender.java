@@ -1,8 +1,7 @@
 package pt.bmaia.csv.writing.recordsappender;
 
 import java.util.Iterator;
-import pt.bmaia.csv.writing.recordsappender.RecordsAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class Rfc4180CompliantCharSequenceArraysRecordsAppender implements RecordsAppender<Iterator<CharSequence[]>> {
 

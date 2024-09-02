@@ -3,7 +3,7 @@ package pt.bmaia.csv.reading.parsing.records;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-import pt.procurainterna.text.charsinput.CharsInput;
+import pt.procurainterna.lang.text.charsinput.CharsInput;
 
 public class RecordsParserImpl implements RecordParser<List<CharSequence>> {
 

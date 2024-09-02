@@ -2,10 +2,10 @@ package pt.bmaia.csv.writing.serializing.outputstream;
 
 import java.nio.charset.Charset;
 import pt.bmaia.csv.writing.recordsappender.RecordsAppender;
-import pt.procurainterna.io.bytesoutput.BytesOutput;
-import pt.procurainterna.text.charsoutput.CharsOutput;
-import pt.procurainterna.text.charsoutput.CharsOutputs;
-import pt.procurainterna.text.charsoutput.FlushableCharsOutput;
+import pt.procurainterna.lang.io.bytesoutput.BytesOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutputs;
+import pt.procurainterna.lang.text.charsoutput.FlushableCharsOutput;
 
 public class BufferedValuesRecordsToBytesOutput<D> implements RecordsToBytesOutput<D> {
 

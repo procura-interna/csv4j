@@ -2,7 +2,7 @@ package pt.bmaia.csv.writing.recordsappender;
 
 import pt.bmaia.csv.writing.delimiterappender.DelimiterAppender;
 import pt.bmaia.csv.writing.recordappender.RecordAppender;
-import pt.procurainterna.text.charsoutput.CharsOutput;
+import pt.procurainterna.lang.text.charsoutput.CharsOutput;
 
 public class ArrayRecordAppenderRecordsAppender<R> implements RecordsAppender<R[]> {
 
